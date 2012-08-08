@@ -47,23 +47,82 @@ Presentation {
     property color textColor: "white"
 
     Slide {
-        centeredText: "Animated Background"
+        centeredText: "My role in tailoring Qt 5 for the Pi"
         fontScale: 2
     }
 
     Slide {
-        title: "Composition"
+        title: "Me"
         content: [
-            "Gradient Rectangle",
-            "Swirls using ShaderEffectItem",
-            " Movement using a vertexShader",
-            " Colorized using a gradient rect converted to a texture",
-            " Controlled using QML properties and animations",
-            "Snow",
-            " Using 'QtQuick.Particles 2.0'",
-            " Emitter",
-            " ImageParticle"
+            "Graduated in South Africa 2005",
+            " Computer Science/Electronics",
+            "Trolltech 2005-2007",
+            " Qtopia Greenphone",
+            " Embedded Linux",
+            "Wimba 2007-2009",
+            " Pure Qt development"
+            ]
+    }
+
+    Slide {
+        title: "Me"
+        content: [
+            "Nokia 2009-now",
+            " Fixing Qt/Embedded related issues",
+            " Fixing platform specific issues",
+            " Created Qt Media Hub showcase",
+            " Fixing long standing Qt related issues for Qt 5",
+            " Stabilizing/Testing Qt 5 on reference hardware",
+            " Doing deep dive integration of Qt on Pi"
         ]
     }
 
+    Slide {
+        title: "Pi"
+        content: [
+            "ARMv6",
+            "700 BogoMips",
+            " vfp unit",
+            " VideoCore IV",
+        ]
+    }
+
+    Slide {
+        title: "Constraints"
+        content: [
+            " 256 megs shared mem",
+            " Insanely slow IO"
+        ]
+    }
+
+    Slide {
+        title: "Qt 4 could not venture here"
+        content: [
+            "Showcased Qt Media Hub against Qt 4 and Qt 5 at CES"
+        ]
+    }
+
+    Slide {
+        title: "With good cause"
+        content: [
+            "Scenegraph",
+            " Revitilized graphics stack",
+            "QPA",
+            " Maturing",
+            "  EGLFS",
+            "  WAYLAND"
+        ]
+    }
+
+    Slide {
+        title: "Eeking out performance"
+        content: [
+            "OpenGL ES2",
+            "Accelerated hardware cursor",
+            "Multimedia acceleration: OpenMax/gst-omx",
+            "vfp unit",
+            " soft/softfp/hard",
+            "wayland"
+        ]
+    }
 }
